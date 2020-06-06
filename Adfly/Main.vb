@@ -5,6 +5,7 @@ Public Class Main
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.SelectedIndex = 0
+        ComboBox2.SelectedIndex = 0
     End Sub
 
     Dim VisitNumb As Integer = 0
@@ -30,12 +31,25 @@ Public Class Main
         LogTextBox.Select(LogTextBox.Text.Length, 0)
         LogTextBox.ScrollToCaret()
 
+        Dim ClickMethod As AdFlyNET.CleckerType = AdFlyNET.CleckerType.Image 'Defaul Method
+
+        Dim UAgent As AdFlyNET.AgentType = AdFlyNET.AgentType.Mobile 'Defaul User Agent
+
+        Select Case ComboBox2.SelectedIndex
+            Case 0
+                ClickMethod = AdFlyNET.CleckerType.Image
+            Case 1
+                ClickMethod = AdFlyNET.CleckerType.Button
+        End Select
+
         Select Case ComboBox1.SelectedIndex
             Case 0
-                AdFlyNET1.Start(UrlTextBox.Text, AdFlyNET.CleckerType.Image, AdFlyNET.AgentType.Mobile, DevNumeric1.Value)
+                UAgent = AdFlyNET.AgentType.Mobile
             Case 1
-                AdFlyNET1.Start(UrlTextBox.Text, AdFlyNET.CleckerType.Image, AdFlyNET.AgentType.PC, DevNumeric1.Value)
+                UAgent = AdFlyNET.AgentType.PC
         End Select
+
+        AdFlyNET1.Start(UrlTextBox.Text, ClickMethod, UAgent, DevNumeric1.Value)
 
         ProcesorMonitor.Enabled = True
 
@@ -73,6 +87,11 @@ Public Class Main
                 i -= 1
             End If
         Next
+    End Sub
+
+    Private Sub DevButton4_Click(sender As Object, e As EventArgs) Handles DevButton4.Click
+        ProcesorMonitor.Enabled = False
+        AdFlyNET1.ForceStop()
     End Sub
 
 End Class

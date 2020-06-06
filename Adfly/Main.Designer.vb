@@ -26,6 +26,11 @@ Partial Class Main
         Me.ProcesorMonitor = New System.Windows.Forms.Timer(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.DevSkin1 = New Adfly.DevSkin()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.DevLabel8 = New Adfly.DevLabel()
+        Me.DevButton4 = New Adfly.DevButton()
+        Me.DevNumeric1 = New Adfly.DevNumeric()
+        Me.DevLabel7 = New Adfly.DevLabel()
         Me.AdFlyNET1 = New Adfly.AdFlyNET()
         Me.DevButton3 = New Adfly.DevButton()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -45,8 +50,6 @@ Partial Class Main
         Me.DevLabel4 = New Adfly.DevLabel()
         Me.ProxieLabel = New Adfly.DevLabel()
         Me.DevLabel2 = New Adfly.DevLabel()
-        Me.DevLabel7 = New Adfly.DevLabel()
-        Me.DevNumeric1 = New Adfly.DevNumeric()
         Me.DevSkin1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -62,6 +65,9 @@ Partial Class Main
         '
         'DevSkin1
         '
+        Me.DevSkin1.Controls.Add(Me.ComboBox2)
+        Me.DevSkin1.Controls.Add(Me.DevLabel8)
+        Me.DevSkin1.Controls.Add(Me.DevButton4)
         Me.DevSkin1.Controls.Add(Me.DevNumeric1)
         Me.DevSkin1.Controls.Add(Me.DevLabel7)
         Me.DevSkin1.Controls.Add(Me.AdFlyNET1)
@@ -82,28 +88,84 @@ Partial Class Main
         Me.DevSkin1.HeaderLogo = Nothing
         Me.DevSkin1.Location = New System.Drawing.Point(0, 0)
         Me.DevSkin1.Name = "DevSkin1"
-        Me.DevSkin1.Size = New System.Drawing.Size(727, 475)
+        Me.DevSkin1.Size = New System.Drawing.Size(773, 510)
         Me.DevSkin1.TabIndex = 0
         Me.DevSkin1.Text = "AdFly Bot v1.0"
         '
+        'ComboBox2
+        '
+        Me.ComboBox2.DisplayMember = "0"
+        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Image", "Button"})
+        Me.ComboBox2.Location = New System.Drawing.Point(378, 106)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(71, 21)
+        Me.ComboBox2.TabIndex = 27
+        '
+        'DevLabel8
+        '
+        Me.DevLabel8.AutoSize = True
+        Me.DevLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.DevLabel8.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.DevLabel8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(143, Byte), Integer))
+        Me.DevLabel8.Location = New System.Drawing.Point(317, 108)
+        Me.DevLabel8.Name = "DevLabel8"
+        Me.DevLabel8.Size = New System.Drawing.Size(55, 15)
+        Me.DevLabel8.TabIndex = 26
+        Me.DevLabel8.Text = "Method :"
+        '
+        'DevButton4
+        '
+        Me.DevButton4.ButtonColor = Adfly.DevButton.xButtonColor.Blue
+        Me.DevButton4.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.DevButton4.Location = New System.Drawing.Point(689, 108)
+        Me.DevButton4.Name = "DevButton4"
+        Me.DevButton4.Size = New System.Drawing.Size(72, 27)
+        Me.DevButton4.TabIndex = 25
+        Me.DevButton4.Text = "Stop"
+        '
+        'DevNumeric1
+        '
+        Me.DevNumeric1.Location = New System.Drawing.Point(518, 102)
+        Me.DevNumeric1.MaxValue = 50
+        Me.DevNumeric1.MinValue = 10
+        Me.DevNumeric1.Name = "DevNumeric1"
+        Me.DevNumeric1.Size = New System.Drawing.Size(70, 30)
+        Me.DevNumeric1.TabIndex = 24
+        Me.DevNumeric1.Text = "DevNumeric1"
+        Me.DevNumeric1.Value = 10
+        '
+        'DevLabel7
+        '
+        Me.DevLabel7.AutoSize = True
+        Me.DevLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.DevLabel7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.DevLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(143, Byte), Integer))
+        Me.DevLabel7.Location = New System.Drawing.Point(455, 108)
+        Me.DevLabel7.Name = "DevLabel7"
+        Me.DevLabel7.Size = New System.Drawing.Size(57, 15)
+        Me.DevLabel7.TabIndex = 23
+        Me.DevLabel7.Text = "Seconds :"
+        '
         'AdFlyNET1
         '
-        Me.AdFlyNET1.Location = New System.Drawing.Point(15, 138)
+        Me.AdFlyNET1.Location = New System.Drawing.Point(15, 147)
         Me.AdFlyNET1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.AdFlyNET1.Name = "AdFlyNET1"
         Me.AdFlyNET1.ScriptErrorsSuppressed = True
-        Me.AdFlyNET1.Size = New System.Drawing.Size(700, 94)
+        Me.AdFlyNET1.Size = New System.Drawing.Size(746, 94)
         Me.AdFlyNET1.TabIndex = 22
         '
         'DevButton3
         '
         Me.DevButton3.ButtonColor = Adfly.DevButton.xButtonColor.Blue
         Me.DevButton3.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.DevButton3.Location = New System.Drawing.Point(515, 105)
+        Me.DevButton3.Location = New System.Drawing.Point(609, 108)
         Me.DevButton3.Name = "DevButton3"
         Me.DevButton3.Size = New System.Drawing.Size(74, 27)
         Me.DevButton3.TabIndex = 20
-        Me.DevButton3.Text = "Force Stop"
+        Me.DevButton3.Text = "Force Next"
         '
         'ComboBox1
         '
@@ -113,7 +175,7 @@ Partial Class Main
         Me.ComboBox1.Items.AddRange(New Object() {"Mobile", "PC"})
         Me.ComboBox1.Location = New System.Drawing.Point(242, 106)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(85, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(69, 21)
         Me.ComboBox1.TabIndex = 19
         '
         'DevLabel5
@@ -169,12 +231,12 @@ Partial Class Main
         Me.LogTextBox.BackColor = System.Drawing.Color.Black
         Me.LogTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.LogTextBox.ForeColor = System.Drawing.Color.Lime
-        Me.LogTextBox.Location = New System.Drawing.Point(12, 238)
+        Me.LogTextBox.Location = New System.Drawing.Point(12, 247)
         Me.LogTextBox.Multiline = True
         Me.LogTextBox.Name = "LogTextBox"
         Me.LogTextBox.ReadOnly = True
         Me.LogTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.LogTextBox.Size = New System.Drawing.Size(703, 225)
+        Me.LogTextBox.Size = New System.Drawing.Size(749, 251)
         Me.LogTextBox.TabIndex = 10
         '
         'UrlTextBox
@@ -207,9 +269,9 @@ Partial Class Main
         '
         Me.DevButton1.ButtonColor = Adfly.DevButton.xButtonColor.Blue
         Me.DevButton1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.DevButton1.Location = New System.Drawing.Point(612, 57)
+        Me.DevButton1.Location = New System.Drawing.Point(609, 57)
         Me.DevButton1.Name = "DevButton1"
-        Me.DevButton1.Size = New System.Drawing.Size(103, 56)
+        Me.DevButton1.Size = New System.Drawing.Size(152, 50)
         Me.DevButton1.TabIndex = 2
         Me.DevButton1.Text = "Start"
         '
@@ -217,7 +279,7 @@ Partial Class Main
         '
         Me.DevControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DevControlBox1.BoxType = Adfly.DevControlBox.xBoxType.Close
-        Me.DevControlBox1.Location = New System.Drawing.Point(683, 0)
+        Me.DevControlBox1.Location = New System.Drawing.Point(729, 0)
         Me.DevControlBox1.Name = "DevControlBox1"
         Me.DevControlBox1.Size = New System.Drawing.Size(44, 27)
         Me.DevControlBox1.TabIndex = 1
@@ -308,34 +370,11 @@ Partial Class Main
         Me.DevLabel2.TabIndex = 14
         Me.DevLabel2.Text = "Visits:"
         '
-        'DevLabel7
-        '
-        Me.DevLabel7.AutoSize = True
-        Me.DevLabel7.BackColor = System.Drawing.Color.Transparent
-        Me.DevLabel7.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.DevLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(143, Byte), Integer))
-        Me.DevLabel7.Location = New System.Drawing.Point(333, 108)
-        Me.DevLabel7.Name = "DevLabel7"
-        Me.DevLabel7.Size = New System.Drawing.Size(57, 15)
-        Me.DevLabel7.TabIndex = 23
-        Me.DevLabel7.Text = "Seconds :"
-        '
-        'DevNumeric1
-        '
-        Me.DevNumeric1.Location = New System.Drawing.Point(396, 102)
-        Me.DevNumeric1.MaxValue = 50
-        Me.DevNumeric1.MinValue = 10
-        Me.DevNumeric1.Name = "DevNumeric1"
-        Me.DevNumeric1.Size = New System.Drawing.Size(70, 30)
-        Me.DevNumeric1.TabIndex = 24
-        Me.DevNumeric1.Text = "DevNumeric1"
-        Me.DevNumeric1.Value = 10
-        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(727, 475)
+        Me.ClientSize = New System.Drawing.Size(773, 510)
         Me.Controls.Add(Me.DevSkin1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Main"
@@ -373,4 +412,7 @@ Partial Class Main
     Friend WithEvents AdFlyNET1 As Adfly.AdFlyNET
     Friend WithEvents DevNumeric1 As Adfly.DevNumeric
     Friend WithEvents DevLabel7 As Adfly.DevLabel
+    Friend WithEvents DevButton4 As Adfly.DevButton
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents DevLabel8 As Adfly.DevLabel
 End Class

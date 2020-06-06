@@ -239,7 +239,7 @@ Public Class AdFlyNET
             GetChildWindows(hwndNew)
             For i = 0 To children.Count - 1
 
-                If children(i).ClassName = "Button" AndAlso children(i).Text = "Cancel" Then
+                If children(i).ClassName = "Button" AndAlso children(i).Text = "Cancelar" Then
 
                     SendMessage(children(i).hWnd, WM_ACTIVATE, WA_ACTIVE, 0)
 

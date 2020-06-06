@@ -9,3 +9,14 @@ C:\Users\S4Lsalsoft\Documents\ASD\Adfly\Adfly\obj\Release\Adfly.Main.resources
 C:\Users\S4Lsalsoft\Documents\ASD\Adfly\Adfly\obj\Release\Adfly.Resources.resources
 C:\Users\S4Lsalsoft\Documents\ASD\Adfly\Adfly\obj\Release\Adfly.vbproj.GenerateResource.Cache
 C:\Users\S4Lsalsoft\Documents\ASD\Adfly\Adfly\obj\Release\Adfly.exe
+C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\bin\Release\Adfly.exe.config
+C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\obj\Release\Adfly.vbproj.ResolveComReference.cache
+C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\obj\Release\Adfly.exe
+C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\obj\Release\Adfly.xml
+C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\obj\Release\Adfly.pdb
+C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\bin\Release\Adfly.exe
+C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\bin\Release\Adfly.pdb
+C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\bin\Release\Adfly.xml
+C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\obj\Release\Adfly.Main.resources
+C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\obj\Release\Adfly.Resources.resources
+C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\obj\Release\Adfly.vbproj.GenerateResource.Cache
