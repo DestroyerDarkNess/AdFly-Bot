@@ -178,12 +178,12 @@ Public Class AdFlyNET
     Private tmr As System.Windows.Forms.Timer = New System.Windows.Forms.Timer()
 
     Public Sub New()
-        '  Dim key As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION", True)
+        Dim key As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION", True)
         Dim name As String = AppDomain.CurrentDomain.FriendlyName
 
-        '  If CObj(key.GetValue(name)) Is Nothing Then
-        ' key.SetValue(name, 11001, RegistryValueKind.DWord)
-        ' End If
+        If CObj(key.GetValue(name)) Is Nothing Then
+         key.SetValue(name, 11001, RegistryValueKind.DWord)
+        End If
 
         Dim RegKeyWrite As RegistryKey = Registry.CurrentUser
         RegKeyWrite = RegKeyWrite.CreateSubKey("Software\Microsoft\Internet Explorer\Styles")
