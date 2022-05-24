@@ -20,3 +20,8 @@ C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\bin\Release\Adfly.xml
 C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\obj\Release\Adfly.Main.resources
 C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\obj\Release\Adfly.Resources.resources
 C:\Users\S4Lsalsoft\Documents\Github\AdFly-Bot\Adfly\obj\Release\Adfly.vbproj.GenerateResource.Cache
+C:\Users\Admin\Documents\GitHub\AdFly-Bot\Adfly\bin\Release\Adfly.exe.config
+C:\Users\Admin\Documents\GitHub\AdFly-Bot\Adfly\obj\Release\Adfly.vbproj.ResolveComReference.cache
+C:\Users\Admin\Documents\GitHub\AdFly-Bot\Adfly\obj\Release\Adfly.exe
+C:\Users\Admin\Documents\GitHub\AdFly-Bot\Adfly\obj\Release\Adfly.xml
+C:\Users\Admin\Documents\GitHub\AdFly-Bot\Adfly\obj\Release\Adfly.pdb

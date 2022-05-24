@@ -178,11 +178,12 @@ Public Class AdFlyNET
     Private tmr As System.Windows.Forms.Timer = New System.Windows.Forms.Timer()
 
     Public Sub New()
+        ' Add BROWSER EMULATION
         Dim key As RegistryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_BROWSER_EMULATION", True)
         Dim name As String = AppDomain.CurrentDomain.FriendlyName
 
         If CObj(key.GetValue(name)) Is Nothing Then
-         key.SetValue(name, 11001, RegistryValueKind.DWord)
+            key.SetValue(name, 11001, RegistryValueKind.DWord)
         End If
 
         Dim RegKeyWrite As RegistryKey = Registry.CurrentUser
@@ -269,7 +270,7 @@ Public Class AdFlyNET
 
     Public Sub OnDocumentLoaded(ByVal sender As Object, ByVal e As WebBrowserDocumentCompletedEventArgs)
         Try
-            InjectAlertBlocker()
+            'InjectAlertBlocker()
             tStart = New Thread(New ThreadStart(AddressOf OnCheckerLoad))
             tStart.Start()
         Catch __unusedException1__ As Exception
@@ -358,14 +359,16 @@ Public Class AdFlyNET
 
     End Sub
 
-    Private Sub InjectAlertBlocker()
-        Dim head As HtmlElement = Me.Document.GetElementsByTagName("head")(0)
-        Dim scriptEl As HtmlElement = Me.Document.CreateElement("script")
-        Dim element As mshtml.IHTMLScriptElement = CType(scriptEl.DomElement, mshtml.IHTMLScriptElement)
-        Dim alertBlocker As String = "window.alert = function () { }"
-        element.text = alertBlocker
-        head.AppendChild(scriptEl)
-    End Sub
+    'Add C:\Windows\assembly\GAC\Microsoft.mshtml\7.0.3300.0__b03f5f7f11d50a3a\Microsoft.mshtml.dll
+
+    'Private Sub InjectAlertBlocker()
+    '    Dim head As HtmlElement = Me.Document.GetElementsByTagName("head")(0)
+    '    Dim scriptEl As HtmlElement = Me.Document.CreateElement("script")
+    '    Dim element As mshtml.IHTMLScriptElement = CType(scriptEl.DomElement, mshtml.IHTMLScriptElement)
+    '    Dim alertBlocker As String = "window.alert = function () { }"
+    '    element.text = alertBlocker
+    '    head.AppendChild(scriptEl)
+    'End Sub
 
     Private Function Num(ByVal value As String) As Integer
         Dim returnVal As String = String.Empty

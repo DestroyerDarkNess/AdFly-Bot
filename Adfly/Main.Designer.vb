@@ -154,7 +154,7 @@ Partial Class Main
         Me.AdFlyNET1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.AdFlyNET1.Name = "AdFlyNET1"
         Me.AdFlyNET1.ScriptErrorsSuppressed = True
-        Me.AdFlyNET1.Size = New System.Drawing.Size(746, 94)
+        Me.AdFlyNET1.Size = New System.Drawing.Size(746, 360)
         Me.AdFlyNET1.TabIndex = 22
         '
         'DevButton3
@@ -319,7 +319,7 @@ Partial Class Main
         Me.DevLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.DevLabel3.Location = New System.Drawing.Point(3, 5)
         Me.DevLabel3.Name = "DevLabel3"
-        Me.DevLabel3.Size = New System.Drawing.Size(47, 15)
+        Me.DevLabel3.Size = New System.Drawing.Size(48, 15)
         Me.DevLabel3.TabIndex = 7
         Me.DevLabel3.Text = "Proxys :"
         '
@@ -342,7 +342,7 @@ Partial Class Main
         Me.DevLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(77, Byte), Integer), CType(CType(143, Byte), Integer))
         Me.DevLabel4.Location = New System.Drawing.Point(141, 5)
         Me.DevLabel4.Name = "DevLabel4"
-        Me.DevLabel4.Size = New System.Drawing.Size(96, 15)
+        Me.DevLabel4.Size = New System.Drawing.Size(97, 15)
         Me.DevLabel4.TabIndex = 12
         Me.DevLabel4.Text = "Proxie Delimiter :"
         '
